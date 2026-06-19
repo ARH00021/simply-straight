@@ -1,0 +1,5 @@
+file 'C:\Users\artur\proyectos\dropi\simply-straight\creativos\videos_finales\v02-sensacion-hd.mp4'
+file 'C:\Users\artur\proyectos\dropi\simply-straight\creativos\videos_finales\v03-unboxing.mp4'
+file 'C:\Users\artur\proyectos\dropi\simply-straight\creativos\videos_finales\v01-lifestyle.mp4'
+file 'C:\Users\artur\proyectos\dropi\simply-straight\creativos\videos_finales\v05-sensacion.mp4'
+file 'C:\Users\artur\proyectos\dropi\simply-straight\creativos\videos_finales\v04-cta.mp4'

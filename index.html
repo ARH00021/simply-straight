@@ -38,8 +38,11 @@
         .btn { display: block; padding: 1rem; border-radius: 3rem; text-align: center; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform .15s; }
         .btn:hover { transform: scale(1.02); }
         .btn-wa { background: #25D366; color: #fff; }
-        .btn-nequi { background: #1a1a1a; color: #fff; }
+        .btn-nequi { background: #1a1a1a; color: #fff; cursor: pointer; }
         .btn-nequi small { display: block; font-weight: 400; font-size: .75rem; opacity: .7; }
+        .pago-card { max-width: 380px; margin: 1rem auto; padding: 1.2rem; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 1rem; text-align: center; }
+        .pago-card .nequi-num { font-size: 1.6rem; font-weight: 800; color: #1a1a1a; letter-spacing: .05em; margin: .5rem 0; }
+        .pago-card .copiar { font-size: .8rem; color: #059669; cursor: pointer; text-decoration: underline; }
         .features { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .75rem; max-width: 400px; margin: 1.5rem auto; padding: 0 1rem; text-align: center; }
         .feat { padding: .8rem; background: #f9fafb; border-radius: 1rem; }
         .feat .icon { font-size: 1.5rem; }
@@ -80,6 +83,15 @@
         </a>
         <a href="https://wa.me/573186606067?text=Hola!%20Tengo%20una%20duda%20sobre%20Simply%20Straight" class="btn" style="background:#f3f4f6;color:#374151;" target="_blank">
             ❓ Tengo una duda
+        </a>
+    </div>
+
+    <div class="pago-card">
+        <p style="font-weight:700;color:#059669;margin-bottom:.3rem;">💚 Paga con Nequi</p>
+        <div class="nequi-num">310 660 6720</div>
+        <p style="font-size:.85rem;color:#374151;">Transfiere $109.900 y envíanos el comprobante</p>
+        <a href="https://wa.me/573186606067?text=Hola!%20Ya%20hice%20el%20pago%20por%20Nequi.%20Adjunto%20comprobante." class="btn btn-nequi" target="_blank" style="display:inline-block;padding:.7rem 1.5rem;font-size:.95rem;">
+            📎 Enviar comprobante por WhatsApp
         </a>
     </div>
 </div>

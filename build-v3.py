@@ -64,7 +64,7 @@ body {
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
@@ -265,7 +265,7 @@ body {
 }
 .section-sub {
     color: var(--gray-500);
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 28px;
     max-width: 400px;
@@ -311,7 +311,7 @@ body {
 .steps-list { display: flex; flex-direction: column; gap: 16px; }
 .step-item { display: flex; align-items: flex-start; gap: 16px; background: var(--white); padding: 18px; border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1px solid var(--gray-100); }
 .step-circle { flex-shrink: 0; width: 44px; height: 44px; background: var(--rose-light); color: var(--rose-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; }
-.step-text h3 { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+.step-text h3 { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
 .step-text p { font-size: 13px; color: var(--gray-500); }
 
 /* ========== HONEST SECTION ========== */
@@ -357,8 +357,8 @@ body {
     scroll-snap-align: start;
 }
 .testimonial-stars { color: var(--gold); font-size: 12px; margin-bottom: 8px; letter-spacing: 2px; }
-.testimonial-body { font-size: 14px; color: var(--gray-600); font-style: italic; line-height: 1.5; margin-bottom: 12px; }
-.testimonial-author { font-size: 14px; font-weight: 700; }
+.testimonial-body { font-size: 16px; color: var(--gray-600); font-style: italic; line-height: 1.5; margin-bottom: 12px; }
+.testimonial-author { font-size: 16px; font-weight: 700; }
 .testimonial-city { font-size: 12px; color: var(--gray-400); }
 .testimonial-tag { display: inline-block; font-size: 10px; background: var(--green-light); color: var(--green); padding: 2px 8px; border-radius: 10px; margin-top: 6px; }
 
@@ -397,7 +397,7 @@ body {
     padding: 15px 16px;
     border: 2px solid var(--gray-200);
     border-radius: var(--radius-sm);
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 10px;
     font-family: inherit;
     background: var(--gray-50);
@@ -449,7 +449,7 @@ body {
     width: 100%;
     text-align: left;
     padding: 16px 18px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     background: var(--white);
     border: none;

@@ -28,23 +28,23 @@ ttq.load('D8T02O3C77UDQUH9C7H0');ttq.page();}(window,document,'ttq');
 
 <style>
 :root {
-    --cream: #faf7f2;
+    --cream: #f9f4ef;
     --white: #ffffff;
     --black: #111111;
-    --charcoal: #1e1e1e;
-    --rose: #d4937a;
-    --rose-dark: #b8705a;
-    --rose-light: #f8ece6;
-    --gold: #c49b4c;
-    --gold-light: #fdf3e0;
-    --green: #3b7a3f;
-    --green-light: #eaf5ea;
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
+    --charcoal: #1c1c1c;
+    --rose: #b8695a;
+    --rose-dark: #9b4d3f;
+    --rose-light: #f6e8e3;
+    --gold: #c8a97e;
+    --gold-light: #faf5ee;
+    --green: #4a7c59;
+    --green-light: #eaf2ec;
+    --gray-50: #fafafa;
+    --gray-100: #f4f4f5;
+    --gray-200: #e5e5e7;
+    --gray-400: #a1a1aa;
+    --gray-500: #71717a;
+    --gray-600: #52525b;
     --red: #dc2626;
     --red-light: #fef2f2;
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);

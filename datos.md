@@ -11,9 +11,9 @@
 | **Plataforma** | Dropi |
 | **Precio proveedor** | $21,000 COP |
 | **Precio sugerido (Dropi)** | $60,000 COP |
-| **Precio de venta propuesto** | $79,900 COP |
-| **Ganancia por unidad** | $58,900 COP |
-| **Margen** | 280% |
+| **Precio de venta propuesto** | $109,900 COP |
+| **Ganancia por unidad** | $20,348 COP (después de ads, envío, devoluciones) |
+| **Margen neto** | 21% |
 | **Stock disponible** | 500 |
 | **Categoría** | Belleza |
 | **Etiquetas** | Ninguna |

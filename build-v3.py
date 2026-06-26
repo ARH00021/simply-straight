@@ -183,19 +183,19 @@ body {
     margin-bottom: 20px;
 }
 .stat-item { text-align: center; }
-.stat-num { font-size: 24px; font-weight: 800; color: var(--rose-dark); }
-.stat-label { font-size: 11px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+.stat-num { font-size: 26px; font-weight: 800; color: var(--rose-dark); }
+.stat-label { font-size: 12px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
 
 /* Price */
 .price-hero { margin-bottom: 18px; }
 .price-hero .old {
     color: var(--gray-400);
     text-decoration: line-through;
-    font-size: 17px;
+    font-size: 18px;
     margin-right: 8px;
 }
 .price-hero .now {
-    font-size: 44px;
+    font-size: 46px;
     font-weight: 800;
     color: var(--black);
     letter-spacing: -1px;
@@ -204,7 +204,7 @@ body {
     display: inline-block;
     background: var(--green-light);
     color: var(--green);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     padding: 5px 10px;
     border-radius: 6px;
@@ -257,7 +257,7 @@ body {
 }
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 10px;

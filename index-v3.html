@@ -61,7 +61,7 @@ body {
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
@@ -180,19 +180,19 @@ body {
     margin-bottom: 20px;
 }
 .stat-item { text-align: center; }
-.stat-num { font-size: 24px; font-weight: 800; color: var(--rose-dark); }
-.stat-label { font-size: 11px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+.stat-num { font-size: 26px; font-weight: 800; color: var(--rose-dark); }
+.stat-label { font-size: 12px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
 
 /* Price */
 .price-hero { margin-bottom: 18px; }
 .price-hero .old {
     color: var(--gray-400);
     text-decoration: line-through;
-    font-size: 17px;
+    font-size: 18px;
     margin-right: 8px;
 }
 .price-hero .now {
-    font-size: 44px;
+    font-size: 46px;
     font-weight: 800;
     color: var(--black);
     letter-spacing: -1px;
@@ -201,7 +201,7 @@ body {
     display: inline-block;
     background: var(--green-light);
     color: var(--green);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     padding: 5px 10px;
     border-radius: 6px;
@@ -254,7 +254,7 @@ body {
 }
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 10px;
@@ -262,7 +262,7 @@ body {
 }
 .section-sub {
     color: var(--gray-500);
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 28px;
     max-width: 400px;
@@ -308,7 +308,7 @@ body {
 .steps-list { display: flex; flex-direction: column; gap: 16px; }
 .step-item { display: flex; align-items: flex-start; gap: 16px; background: var(--white); padding: 18px; border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1px solid var(--gray-100); }
 .step-circle { flex-shrink: 0; width: 44px; height: 44px; background: var(--rose-light); color: var(--rose-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; }
-.step-text h3 { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+.step-text h3 { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
 .step-text p { font-size: 13px; color: var(--gray-500); }
 
 /* ========== HONEST SECTION ========== */
@@ -354,8 +354,8 @@ body {
     scroll-snap-align: start;
 }
 .testimonial-stars { color: var(--gold); font-size: 12px; margin-bottom: 8px; letter-spacing: 2px; }
-.testimonial-body { font-size: 14px; color: var(--gray-600); font-style: italic; line-height: 1.5; margin-bottom: 12px; }
-.testimonial-author { font-size: 14px; font-weight: 700; }
+.testimonial-body { font-size: 16px; color: var(--gray-600); font-style: italic; line-height: 1.5; margin-bottom: 12px; }
+.testimonial-author { font-size: 16px; font-weight: 700; }
 .testimonial-city { font-size: 12px; color: var(--gray-400); }
 .testimonial-tag { display: inline-block; font-size: 10px; background: var(--green-light); color: var(--green); padding: 2px 8px; border-radius: 10px; margin-top: 6px; }
 
@@ -394,7 +394,7 @@ body {
     padding: 15px 16px;
     border: 2px solid var(--gray-200);
     border-radius: var(--radius-sm);
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 10px;
     font-family: inherit;
     background: var(--gray-50);
@@ -446,7 +446,7 @@ body {
     width: 100%;
     text-align: left;
     padding: 16px 18px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     background: var(--white);
     border: none;
@@ -548,22 +548,35 @@ body {
     <!-- Social Proof Row -->
     <div style="display:flex;align-items:center;justify-content:center;gap:12px;padding:0 20px 16px;max-width:var(--max-w);margin:0 auto;">
         <div style="flex:1;text-align:center;">
-            <p style="font-size:11px;font-style:italic;color:var(--gray-500);margin-bottom:4px;">'Finalmente algo que funciona' 😍</p>
-            <p style="font-size:10px;font-weight:600;color:var(--gray-600);">— Valentina, Medellín</p>
+            <p style="font-size:12px;font-style:italic;color:var(--gray-500);margin-bottom:4px;">'Finalmente algo que funciona' 😍</p>
+            <p style="font-size:11px;font-weight:600;color:var(--gray-600);">— Valentina, Medellín</p>
         </div>
-        <div style="flex-shrink:0;width:170px;height:170px;background:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;border:3px dashed var(--rose-light);position:relative;">
-            <img src="creativos/super-anuncio-7.png" alt="Simply Straight" style="width:138px;height:138px;object-fit:cover;border-radius:50%;">
-            <div style="position:absolute;bottom:-12px;background:var(--rose-dark);color:white;padding:4px 14px;border-radius:14px;font-size:12px;font-weight:700;">+500 vendidos ✨</div>
+        <div style="flex-shrink:0;text-align:center;">
+            <!-- Image Carousel -->
+            <div style="position:relative;width:200px;height:200px;margin:0 auto;">
+                <div id="heroCarousel" style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:16px;box-shadow:var(--shadow-lg);">
+                    <img src="creativos/01-producto-principal.png" class="carousel-slide active" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;opacity:1;transition:opacity 0.5s;">
+                    <img src="creativos/03-antes-despues.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;opacity:0;transition:opacity 0.5s;">
+                    <img src="creativos/05-unboxing.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;opacity:0;transition:opacity 0.5s;">
+                </div>
+                <!-- Dots -->
+                <div style="display:flex;justify-content:center;gap:6px;margin-top:8px;">
+                    <span class="carousel-dot active" onclick="goToSlide(0)" style="width:8px;height:8px;border-radius:50%;background:var(--rose-dark);cursor:pointer;"></span>
+                    <span class="carousel-dot" onclick="goToSlide(1)" style="width:8px;height:8px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
+                    <span class="carousel-dot" onclick="goToSlide(2)" style="width:8px;height:8px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
+                </div>
+                <div style="position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);background:var(--rose-dark);color:white;padding:5px 16px;border-radius:14px;font-size:13px;font-weight:700;z-index:10;white-space:nowrap;">+500 vendidos ✨</div>
+            </div>
         </div>
         <div style="flex:1;text-align:center;">
-            <p style="font-size:11px;font-style:italic;color:var(--gray-500);margin-bottom:4px;">'Es mágico, amiga' ✨</p>
-            <p style="font-size:10px;font-weight:600;color:var(--gray-600);">— Sofía, Cali</p>
+            <p style="font-size:12px;font-style:italic;color:var(--gray-500);margin-bottom:4px;">'Es mágico, amiga' ✨</p>
+            <p style="font-size:11px;font-weight:600;color:var(--gray-600);">— Sofía, Cali</p>
         </div>
     </div>
 
     <!-- Video tagline -->
-    <div style="text-align:center;padding:0 20px 12px;">
-        <span style="background:var(--gray-100);color:var(--gray-600);padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;">▶ Mujer real. Cabello real. Sin filtro.</span>
+    <div style="text-align:center;padding:0 20px 20px;">
+        <span style="background:var(--gray-100);color:var(--gray-600);padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;">▶ Desliza para ver resultados reales</span>
     </div>
 
     <div class="hero-content" style="padding-top:0;">
@@ -573,15 +586,15 @@ body {
             <div class="stat-item"><div class="stat-num">60s</div><div class="stat-label">Resultado</div></div>
         </div>
 
+        <div style="display:flex;justify-content:center;gap:16px;margin-bottom:18px;font-size:12px;color:var(--gray-500);">
+            <span>👁️ <strong id="viewerCount" style="color:var(--rose-dark);">12</strong> personas viendo</span>
+            <span>🔥 <strong id="soldToday" style="color:var(--rose-dark);">23</strong> vendidos hoy</span>
+        </div>
+
         <div class="price-hero">
             <span class="old">$129.900</span>
             <span class="now">$89.900</span>
             <span class="save">AHORRAS $40.000</span>
-        </div>
-
-        <div style="display:flex;justify-content:center;gap:16px;margin-bottom:18px;font-size:11px;color:var(--gray-500);">
-            <span>👁️ <strong id="viewerCount" style="color:var(--rose-dark);">12</strong> personas viendo</span>
-            <span>🔥 <strong id="soldToday" style="color:var(--rose-dark);">23</strong> vendidos hoy</span>
         </div>
 
         <a href="#comprar" class="btn-block btn-black">🛒 QUIERO EL MÍO — ENVÍO GRATIS</a>
@@ -831,6 +844,23 @@ body {
 let currentQty = 1;
 let currentPrice = 89900;
 let stock = 19;
+let currentSlide = 0;
+
+// Carousel
+function goToSlide(n) {
+    currentSlide = n;
+    document.querySelectorAll('.carousel-slide').forEach(function(s, i) {
+        s.style.opacity = i === n ? '1' : '0';
+    });
+    document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
+        d.style.background = i === n ? 'var(--rose-dark)' : 'var(--gray-200)';
+    });
+}
+// Auto-rotate every 4 seconds
+setInterval(function() {
+    currentSlide = (currentSlide + 1) % 3;
+    goToSlide(currentSlide);
+}, 4000);
 
 function selectPayment(el) {
     document.querySelectorAll('.payment-tab').forEach(t => t.classList.remove('active'));

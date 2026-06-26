@@ -230,15 +230,15 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 18px;
-    padding: 18px 0;
+    padding: 20px 0;
     background: var(--gray-50);
-    font-size: 11px;
-    color: var(--gray-500);
-    font-weight: 500;
+    font-size: 13px;
+    color: var(--gray-600);
+    font-weight: 600;
     letter-spacing: 0.2px;
 }
 .trust-strip span { display: flex; align-items: center; gap: 5px; }
-.trust-strip .green { color: var(--green); font-weight: 600; }
+.trust-strip .green { color: var(--green); font-weight: 700; }
 
 /* ========== SECTIONS ========== */
 .section { padding: 44px 0; }

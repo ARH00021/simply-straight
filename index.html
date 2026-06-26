@@ -1001,6 +1001,10 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
     msg += '\\n💳 *Pago:* ' + order.pago;
     msg += '\\n\\n✅ *ENVIAR CONFIRMACIÓN AL CLIENTE*';
     
+    // Redirect to MercadoPago or WhatsApp
+    if (pay.includes('MercadoPago') || pay.includes('💳')) {
+        window.open('https://link.mercadopago.com.co/simplystraight', '_blank');
+    }
     window.open('https://wa.me/573186606067?text=' + encodeURIComponent(msg), '_blank');
     
     // Reset form

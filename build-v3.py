@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+"""Build the definitive Simply Straight landing page."""
+
+html = r"""<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -996,4 +999,8 @@ if (location.search.includes('admin')) {
 </script>
 
 </body>
-</html>
+</html>"""
+
+with open(r'C:\Users\artur\proyectos\dropi\simply-straight\index-v3.html', 'w', encoding='utf-8') as f:
+    f.write(html)
+print(f'OK: index-v3.html written ({len(html)} bytes)')

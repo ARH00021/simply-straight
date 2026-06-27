@@ -980,7 +980,15 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
 
 // Admin panel — accessible via ?admin in URL
 if (location.search.includes('admin')) {
-    var adminHTML = '<div id=\"adminPanel\" style=\"position:fixed;top:0;left:0;right:0;bottom:0;background:white;z-index:9999;overflow:auto;padding:20px;\"><h2 style=\"margin-bottom:10px;\">📊 Pedidos Recibidos</h2><button onclick=\"document.getElementById(\\'adminPanel\\').remove()\" style=\"position:absolute;top:10px;right:20px;font-size:24px;background:none;border:none;cursor:pointer;\">&times;</button><table style=\"width:100%;border-collapse:collapse;font-size:12px;\"><thead><tr style=\"background:#111;color:white;\"><th>#</th><th>Fecha</th><th>Cliente</th><th>Celular</th><th>Ciudad</th><th>Dirección</th><th>Cant</th><th>Total</th><th>Pago</th></tr></thead><tbody id=\"ordersTable\"></tbody></table><p style=\"margin-top:10px;font-size:11px;color:gray;\">Los datos se guardan solo en este navegador. Para acceder, añade <code>?admin</code> a la URL.</p></div>';
+    var adminHTML = `<div id="adminPanel" style="position:fixed;top:0;left:0;right:0;bottom:0;background:white;z-index:9999;overflow:auto;padding:20px;">
+        <h2 style="margin-bottom:10px;">📊 Pedidos Recibidos</h2>
+        <button onclick="document.getElementById('adminPanel').remove()" style="position:absolute;top:10px;right:20px;font-size:24px;background:none;border:none;cursor:pointer;">&times;</button>
+        <table style="width:100%;border-collapse:collapse;font-size:12px;">
+            <thead><tr style="background:#111;color:white;"><th>#</th><th>Fecha</th><th>Cliente</th><th>Celular</th><th>Ciudad</th><th>Dirección</th><th>Cant</th><th>Total</th><th>Pago</th></tr></thead>
+            <tbody id="ordersTable"></tbody>
+        </table>
+        <p style="margin-top:10px;font-size:11px;color:gray;">Los datos se guardan solo en este navegador. Para acceder, añade <code>?admin</code> a la URL.</p>
+    </div>`;
     document.body.insertAdjacentHTML('beforeend', adminHTML);
     var orders = JSON.parse(localStorage.getItem('simplyOrders') || '[]');
     var tbody = document.getElementById('ordersTable');

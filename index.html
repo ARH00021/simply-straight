@@ -923,7 +923,8 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
     e.preventDefault();
     var inputs = this.querySelectorAll('input');
     var total = currentPrice * currentQty;
-    var pay = document.querySelector('#paymentTabs .payment-tab.active').innerText.replace(/\\n.*/,'').trim();
+    var payEl = document.querySelector('#paymentTabs .payment-tab.active');
+    var pay = payEl ? payEl.textContent.replace(/\\n|📦|💳|🏦|📱/g,'').trim() : 'Contraentrega';
     
     // Build order data
     var order = {
@@ -947,30 +948,31 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
     orders.unshift(order);
     localStorage.setItem('simplyOrders', JSON.stringify(orders));
     
-    // Build WhatsApp message with all data
+    // Build WhatsApp message
     var msg = '🛒 *NUEVO PEDIDO SIMPLY STRAIGHT*';
-    msg += '\\n📅 ' + order.fecha;
-    msg += '\\n👤 *Cliente:* ' + order.nombre + ' ' + order.apellido;
-    msg += '\\n📱 *Celular:* ' + order.celular;
-    msg += '\\n📧 *Correo:* ' + order.correo;
-    msg += '\\n📍 *Ubicación:* ' + order.ciudad + ', ' + order.departamento;
-    msg += '\\n🏠 *Dirección:* ' + order.direccion;
-    msg += '\\n🏘️ *Barrio:* ' + order.barrio;
-    msg += '\\n\\n📦 *Producto:* Simply Straight x' + order.cantidad;
-    msg += '\\n💰 *Precio unitario:* $' + order.precioUnit.toLocaleString('es-CO');
-    msg += '\\n💵 *TOTAL:* $' + order.total.toLocaleString('es-CO');
-    msg += '\\n💳 *Pago:* ' + order.pago;
-    msg += '\\n\\n✅ *ENVIAR CONFIRMACIÓN AL CLIENTE*';
+    msg += '%0A📅 ' + order.fecha;
+    msg += '%0A👤 *Cliente:* ' + order.nombre + ' ' + order.apellido;
+    msg += '%0A📱 *Celular:* ' + order.celular;
+    msg += '%0A📧 *Correo:* ' + order.correo;
+    msg += '%0A📍 *Ubicación:* ' + order.ciudad + ', ' + order.departamento;
+    msg += '%0A🏠 *Dirección:* ' + order.direccion;
+    msg += '%0A🏘️ *Barrio:* ' + order.barrio;
+    msg += '%0A📦 *Producto:* Simply Straight x' + order.cantidad;
+    msg += '%0A💰 *Precio u:* $' + order.precioUnit.toLocaleString('es-CO');
+    msg += '%0A💵 *TOTAL:* $' + order.total.toLocaleString('es-CO');
+    msg += '%0A💳 *Pago:* ' + order.pago;
     
-    // Redirect to MercadoPago or WhatsApp
-    if (pay.includes('MercadoPago') || pay.includes('💳')) {
+    // Open MercadoPago or WhatsApp
+    var waURL = 'https://wa.me/573186606067?text=' + msg;
+    if (pay === 'MercadoPago') {
         window.open('https://link.mercadopago.com.co/simplystraight', '_blank');
+        setTimeout(function() { window.open(waURL, '_blank'); }, 500);
+    } else {
+        window.open(waURL, '_blank');
     }
-    window.open('https://wa.me/573186606067?text=' + encodeURIComponent(msg), '_blank');
     
-    // Reset form
+    alert('✅ ¡Pedido enviado! Te contactaremos pronto.');
     this.reset();
-    alert('✅ ¡Pedido enviado! Revisa WhatsApp para confirmar.');
 });
 
 // Admin panel — accessible via ?admin in URL

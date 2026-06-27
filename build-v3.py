@@ -587,6 +587,7 @@ body {
         <video class="hero-video" autoplay loop playsinline poster="creativos/antes y despues/1.png" onclick="this.play();this.muted=false" style="max-width:360px;margin:0 auto;display:block;">
             <source src="creativos/demo-loop.mp4" type="video/mp4">
         </video>
+        <div style="text-align:center;margin-top:6px;"><button onclick="var v=document.querySelector('video');v.muted=!v.muted;this.textContent=v.muted?'🔇':'🔊'" style="background:rgba(0,0,0,.7);color:white;border:none;padding:6px 12px;border-radius:20px;font-size:12px;cursor:pointer;">🔇 Toca para activar sonido</button></div>
         <p style="text-align:center;font-size:13px;color:var(--gray-400);margin-top:8px;">Mujer real. Cabello real. Sin filtro ni edición.</p>
         <div style="text-align:center;margin-top:16px;">
             <span style="display:inline-block;background:var(--rose-dark);color:white;padding:6px 20px;border-radius:16px;font-size:14px;font-weight:700;">+500 vendidos ✨</span>

@@ -545,62 +545,33 @@ body {
         <p class="hero-sub">Reduce el frizz y peina tu cabello en minutos desde casa. Sin plancha, sin cremas, sin drama.</p>
     </div>
 
-    <!-- Social Proof Row -->
-    <div style="display:flex;align-items:center;justify-content:center;gap:12px;padding:0 20px 16px;max-width:var(--max-w);margin:0 auto;">
-        <div style="flex:1;text-align:center;">
-            <p style="font-size:12px;font-style:italic;color:var(--gray-500);margin-bottom:4px;">'Finalmente algo que funciona' 😍</p>
-            <p style="font-size:11px;font-weight:600;color:var(--gray-600);">— Valentina, Medellín</p>
+    <!-- Carrusel grande -->
+    <div style="position:relative;width:100%;max-width:420px;height:340px;margin:0 auto 16px;padding:0 20px;">
+        <div id="heroCarousel" style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.12);">
+            <img src="creativos/carrusel-1-ritual.png" class="carousel-slide active" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:1;transition:opacity 0.5s;">
+            <img src="creativos/carrusel-2-jardin.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:0;transition:opacity 0.5s;">
+            <img src="creativos/carrusel-3-minimalista.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:0;transition:opacity 0.5s;">
+            <img src="creativos/carrusel-4-producto.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:0;transition:opacity 0.5s;">
+            <!-- Flechas -->
+            <button onclick="prevSlide()" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15);">‹</button>
+            <button onclick="nextSlide()" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15);">›</button>
+            <!-- Badge -->
+            <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:var(--rose-dark);color:white;padding:5px 18px;border-radius:16px;font-size:13px;font-weight:700;z-index:5;">+500 vendidos ✨</div>
         </div>
-        <div style="flex-shrink:0;text-align:center;">
-            <!-- Image Carousel -->
-            <div style="position:relative;width:220px;height:220px;margin:0 auto;">
-                <div id="heroCarousel" style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:16px;box-shadow:var(--shadow-lg);">
-                    <img src="creativos/carrusel-1-ritual.png" class="carousel-slide active" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;opacity:1;transition:opacity 0.5s;">
-                    <img src="creativos/carrusel-2-jardin.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;opacity:0;transition:opacity 0.5s;">
-                    <img src="creativos/carrusel-3-minimalista.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;opacity:0;transition:opacity 0.5s;">
-                    <img src="creativos/carrusel-4-producto.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;opacity:0;transition:opacity 0.5s;">
-                </div>
-                <!-- Dots -->
-                <div style="display:flex;justify-content:center;gap:6px;margin-top:8px;">
-                    <span class="carousel-dot active" onclick="goToSlide(0)" style="width:8px;height:8px;border-radius:50%;background:var(--rose-dark);cursor:pointer;"></span>
-                    <span class="carousel-dot" onclick="goToSlide(1)" style="width:8px;height:8px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
-                    <span class="carousel-dot" onclick="goToSlide(2)" style="width:8px;height:8px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
-                    <span class="carousel-dot" onclick="goToSlide(3)" style="width:8px;height:8px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
-                </div>
-                <div style="position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);background:var(--rose-dark);color:white;padding:5px 16px;border-radius:14px;font-size:13px;font-weight:700;z-index:10;white-space:nowrap;">+500 vendidos ✨</div>
-            </div>
-        </div>
-        <div style="flex:1;text-align:center;">
-            <p style="font-size:12px;font-style:italic;color:var(--gray-500);margin-bottom:4px;">'Es mágico, amiga' ✨</p>
-            <p style="font-size:11px;font-weight:600;color:var(--gray-600);">— Sofía, Cali</p>
+        <!-- Dots -->
+        <div style="display:flex;justify-content:center;gap:8px;margin-top:12px;">
+            <span class="carousel-dot active" onclick="goToSlide(0)" style="width:10px;height:10px;border-radius:50%;background:var(--rose-dark);cursor:pointer;"></span>
+            <span class="carousel-dot" onclick="goToSlide(1)" style="width:10px;height:10px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
+            <span class="carousel-dot" onclick="goToSlide(2)" style="width:10px;height:10px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
+            <span class="carousel-dot" onclick="goToSlide(3)" style="width:10px;height:10px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
         </div>
     </div>
 
-    <!-- Video tagline -->
-    <div style="text-align:center;padding:0 20px 20px;">
-        <span style="background:var(--gray-100);color:var(--gray-600);padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;">▶ Desliza para ver resultados reales</span>
-    </div>
-
-    <div class="hero-content" style="padding-top:0;">
-        <div class="stats-row">
-            <div class="stat-item"><div class="stat-num">+500</div><div class="stat-label">Vendidos</div></div>
-            <div class="stat-item"><div class="stat-num">4.8 ★</div><div class="stat-label">Estrellas</div></div>
-            <div class="stat-item"><div class="stat-num">60s</div><div class="stat-label">Resultado</div></div>
-        </div>
-
-        <div style="display:flex;justify-content:center;gap:16px;margin-bottom:18px;font-size:12px;color:var(--gray-500);">
-            <span>👁️ <strong id="viewerCount" style="color:var(--rose-dark);">12</strong> personas viendo</span>
-            <span>🔥 <strong id="soldToday" style="color:var(--rose-dark);">23</strong> vendidos hoy</span>
-        </div>
-
-        <div class="price-hero">
-            <span class="old">$189.900</span>
-            <span class="now">$119.900</span>
-            <span class="save">AHORRAS $70.000</span>
-        </div>
-
-        <a href="#comprar" class="btn-block btn-black">🛒 QUIERO EL MÍO — ENVÍO GRATIS</a>
-        <a href="https://wa.me/573186606067" class="btn-block btn-outline">💬 Preguntar por WhatsApp</a>
+    <!-- Stats only -->
+    <div class="stats-row">
+        <div class="stat-item"><div class="stat-num">+500</div><div class="stat-label">Vendidos</div></div>
+        <div class="stat-item"><div class="stat-num">4.8 ★</div><div class="stat-label">Estrellas</div></div>
+        <div class="stat-item"><div class="stat-num">60s</div><div class="stat-label">Resultado</div></div>
     </div>
 </section>
 
@@ -624,13 +595,30 @@ body {
     </div>
 </section>
 
-<!-- DEMO -->
-<section class="section-sm">
+<!-- VIDEO DEMO -->
+<section class="section" style="padding-top:0;">
     <div class="container">
-        <video autoplay loop muted playsinline poster="creativos/antes y despues/1.png" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow-lg);" onclick="this.play()">
-            <source src="creativos/CAMPAÑA-FINAL-SUBS.mp4" type="video/mp4">
+        <video class="hero-video" autoplay loop muted playsinline poster="creativos/antes y despues/1.png" onclick="this.play()">
+            <source src="creativos/CAMPANA-FINAL-SUBS.mp4" type="video/mp4">
         </video>
-        <p style="text-align:center;font-size:12px;color:var(--gray-400);margin-top:8px;">Mujer real. Cabello real. Sin filtro ni edición.</p>
+        <p style="text-align:center;font-size:13px;color:var(--gray-400);margin-top:8px;">Mujer real. Cabello real. Sin filtro ni edición.</p>
+    </div>
+</section>
+
+<!-- PRICE BLOCK (after video) -->
+<section class="section" style="padding-top:0;">
+    <div class="container" style="text-align:center;">
+        <div class="price-hero">
+            <span class="old">$189.900</span>
+            <span class="now">$119.900</span>
+            <span class="save">AHORRAS $70.000</span>
+        </div>
+        <div style="display:flex;justify-content:center;gap:16px;margin:14px 0 18px;font-size:12px;color:var(--gray-500);">
+            <span>👁️ <strong id="viewerCount" style="color:var(--rose-dark);">12</strong> personas viendo</span>
+            <span>🔥 <strong id="soldToday" style="color:var(--rose-dark);">23</strong> vendidos hoy</span>
+        </div>
+        <a href="#comprar" class="btn-block btn-black">🛒 QUIERO EL MÍO — ENVÍO GRATIS</a>
+        <a href="https://wa.me/573186606067" class="btn-block btn-outline">💬 Preguntar por WhatsApp</a>
     </div>
 </section>
 
@@ -857,6 +845,14 @@ function goToSlide(n) {
     document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
         d.style.background = i === n ? 'var(--rose-dark)' : 'var(--gray-200)';
     });
+}
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + 4) % 4;
+    goToSlide(currentSlide);
+}
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % 4;
+    goToSlide(currentSlide);
 }
 // Auto-rotate every 4 seconds
 setInterval(function() {

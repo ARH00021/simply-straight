@@ -597,8 +597,8 @@ body {
         </div>
 
         <div class="price-hero">
-            <span class="old">$129.900</span>
-            <span class="now">$89.900</span>
+            <span class="old">$1219.900</span>
+            <span class="now">$819.900</span>
             <span class="save">AHORRAS $40.000</span>
         </div>
 
@@ -695,7 +695,7 @@ body {
         <table class="comp-table">
             <tr><th></th><th>Simply Straight</th><th>Plancha</th><th>Peluquería</th></tr>
             <tr><td>Tiempo</td><td class="win">Minutos</td><td>30-40 min</td><td>1-2 horas</td></tr>
-            <tr><td>Costo</td><td class="win">$89.900 una vez</td><td>$80-150K + cremas</td><td>$30-80K por visita</td></tr>
+            <tr><td>Costo</td><td class="win">$819.900 una vez</td><td>$80-150K + cremas</td><td>$30-80K por visita</td></tr>
             <tr><td>Daño</td><td class="win">Temp. controlada</td><td>Calor directo</td><td>Químicos</td></tr>
             <tr><td>Dónde</td><td class="win">En tu casa</td><td>En tu casa</td><td>Fuera de casa</td></tr>
             <tr><td>Garantía</td><td class="win">✅ Sí</td><td>Depende</td><td>No aplica</td></tr>
@@ -750,8 +750,8 @@ body {
             <p style="text-align:center;color:var(--gray-500);font-size:14px;margin-bottom:10px;">Cepillo alisador de cerámica 3D</p>
 
             <div class="price-hero" style="text-align:center;">
-                <span class="old">$129.900</span>
-                <span class="now">$89.900</span><br>
+                <span class="old">$1219.900</span>
+                <span class="now">$819.900</span><br>
                 <span class="save" style="margin-left:0;margin-top:6px;">AHORRAS $40.000 HOY</span>
             </div>
 
@@ -760,18 +760,18 @@ body {
             <div style="margin:20px 0;">
                     <p style="font-weight:700;margin-bottom:8px;">Cantidad:</p>
                     <div class="payment-tabs" id="qtyTabs" style="margin-bottom:16px;">
-                        <div class="payment-tab active" onclick="selectQty(this,1,89900)" style="flex-direction:column;">
+                        <div class="payment-tab active" onclick="selectQty(this,1,119900)" style="flex-direction:column;">
                             <span style="font-weight:800;font-size:15px;">1 unidad</span>
-                            <span style="font-size:11px;">$89.900</span>
+                            <span style="font-size:11px;">$819.900</span>
                         </div>
-                        <div class="payment-tab" onclick="selectQty(this,2,75000)" style="flex-direction:column;border-color:var(--rose-light);">
+                        <div class="payment-tab" onclick="selectQty(this,2,99900)" style="flex-direction:column;border-color:var(--rose-light);">
                             <span style="font-weight:800;font-size:15px;">2 unidades</span>
-                            <span style="font-size:11px;">$75.000 c/u</span>
+                            <span style="font-size:11px;">$79.900 c/u</span>
                             <span style="font-size:9px;color:var(--green);">AHORRAS $29.800</span>
                         </div>
-                        <div class="payment-tab" onclick="selectQty(this,3,68000)" style="flex-direction:column;border-color:var(--gold);">
+                        <div class="payment-tab" onclick="selectQty(this,3,89900)" style="flex-direction:column;border-color:var(--gold);">
                             <span style="font-weight:800;font-size:15px;">3 unidades</span>
-                            <span style="font-size:11px;">$68.000 c/u</span>
+                            <span style="font-size:11px;">$69.900 c/u</span>
                             <span style="font-size:9px;color:var(--green);">AHORRAS $65.700</span>
                             <span style="font-size:8px;background:var(--gold-light);color:var(--gold);padding:1px 6px;border-radius:8px;margin-top:2px;">MÁS VENDIDO</span>
                         </div>
@@ -799,7 +799,7 @@ body {
                 </div>
                 <input class="field" type="text" placeholder="Dirección y complementos (ej: Cra 5 #10-20, Apto 301)" required>
                 <input class="field" type="text" placeholder="Barrio (opcional)">
-                <button type="submit" class="submit-btn">✅ CONFIRMAR PEDIDO — $89.900</button>
+                <button type="submit" class="submit-btn">✅ CONFIRMAR PEDIDO — $819.900</button>
                 <p class="submit-note">Te escribimos por WhatsApp para confirmar todo antes de enviar.</p>
             </form>
 
@@ -847,7 +847,7 @@ body {
 
 <script>
 let currentQty = 1;
-let currentPrice = 89900;
+let currentPrice = 119900;
 let stock = 19;
 let currentSlide = 0;
 

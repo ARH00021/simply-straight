@@ -827,6 +827,7 @@ body {
 </a>
 
 <script>
+console.log('Simply Straight JS loaded');
 let currentQty = 1;
 let currentPrice = 119900;
 let stock = 19;
@@ -839,22 +840,22 @@ var slides = [
     'creativos/carrusel-3-minimalista.png',
     'creativos/carrusel-4-producto.png'
 ];
-function goToSlide(n) {
+window.goToSlide = function(n) {
     currentSlide = n;
     document.getElementById('carouselImg').src = slides[n];
     document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
         d.style.background = i === n ? 'var(--rose-dark)' : 'var(--gray-200)';
     });
-}
-function prevSlide() {
+};
+window.prevSlide = function() {
     currentSlide = (currentSlide - 1 + 4) % 4;
-    goToSlide(currentSlide);
-}
-function nextSlide() {
+    window.goToSlide(currentSlide);
+};
+window.nextSlide = function() {
     currentSlide = (currentSlide + 1) % 4;
-    goToSlide(currentSlide);
-}
-setInterval(nextSlide, 3000);
+    window.goToSlide(currentSlide);
+};
+window.carouselInterval = setInterval(window.nextSlide, 3000);
 
 function selectPayment(el) {
     document.querySelectorAll('.payment-tab').forEach(t => t.classList.remove('active'));

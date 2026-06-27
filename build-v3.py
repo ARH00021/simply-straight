@@ -551,16 +551,10 @@ body {
     <!-- Carrusel grande -->
     <div style="position:relative;width:100%;max-width:420px;height:340px;margin:0 auto 16px;padding:0 20px;">
         <div id="heroCarousel" style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.12);">
-            <img src="creativos/carrusel-1-ritual.png" class="carousel-slide active" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:1;transition:opacity 0.5s;">
-            <img src="creativos/carrusel-2-jardin.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:0;transition:opacity 0.5s;">
-            <img src="creativos/carrusel-3-minimalista.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:0;transition:opacity 0.5s;">
-            <img src="creativos/carrusel-4-producto.png" class="carousel-slide" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:20px;opacity:0;transition:opacity 0.5s;">
-            <!-- Flechas -->
+            <img id="carouselImg" src="creativos/carrusel-1-ritual.png" style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
             <button onclick="prevSlide()" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15);">‹</button>
             <button onclick="nextSlide()" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15);">›</button>
-            <!-- Badge -->
         </div>
-        <!-- Dots -->
         <div style="display:flex;justify-content:center;gap:8px;margin-top:12px;">
             <span class="carousel-dot active" onclick="goToSlide(0)" style="width:10px;height:10px;border-radius:50%;background:var(--rose-dark);cursor:pointer;"></span>
             <span class="carousel-dot" onclick="goToSlide(1)" style="width:10px;height:10px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
@@ -841,12 +835,16 @@ let currentPrice = 119900;
 let stock = 19;
 let currentSlide = 0;
 
-// Carousel
+// Carousel — simple: changes image src
+var slides = [
+    'creativos/carrusel-1-ritual.png',
+    'creativos/carrusel-2-jardin.png',
+    'creativos/carrusel-3-minimalista.png',
+    'creativos/carrusel-4-producto.png'
+];
 function goToSlide(n) {
     currentSlide = n;
-    document.querySelectorAll('.carousel-slide').forEach(function(s, i) {
-        s.style.opacity = i === n ? '1' : '0';
-    });
+    document.getElementById('carouselImg').src = slides[n];
     document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
         d.style.background = i === n ? 'var(--rose-dark)' : 'var(--gray-200)';
     });
@@ -859,11 +857,7 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % 4;
     goToSlide(currentSlide);
 }
-// Auto-rotate every 4 seconds
-setInterval(function() {
-    currentSlide = (currentSlide + 1) % 4;
-    goToSlide(currentSlide);
-}, 3000);
+setInterval(nextSlide, 3000);
 
 function selectPayment(el) {
     document.querySelectorAll('.payment-tab').forEach(t => t.classList.remove('active'));

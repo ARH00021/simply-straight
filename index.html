@@ -525,7 +525,7 @@ body {
 
 <!-- URGENCY -->
 <div class="urgency-bar" id="urgencyBar">
-    🔥 SOLO <span id="stockCounter">19</span> UNIDADES DISPONIBLES · OFERTA TERMINA EN <span id="countdown">29h 59m 59s</span> · ENVÍO GRATIS
+    🔥 SOLO <span id="stockCounter">50</span> UNIDADES DISPONIBLES · ENVÍO GRATIS HOY
 </div>
 
 <!-- SOCIAL PROOF TOAST -->
@@ -819,7 +819,7 @@ body {
 console.log('Simply Straight JS loaded');
 let currentQty = 1;
 let currentPrice = 119900;
-let stock = 19;
+let stock = 50;
 
 function selectPayment(el) {
     document.querySelectorAll('.payment-tab').forEach(t => t.classList.remove('active'));
@@ -859,17 +859,15 @@ var lastNames = ['García López', 'Rodríguez Martínez', 'Hernández Gómez', 
 var toastTimes = ['hace 2 min', 'hace 5 min', 'hace 8 min', 'ahora mismo', 'hace 1 min', 'hace 3 min', 'hace 10 min', 'hace 15 min', 'hace 4 min', 'hace 6 min'];
 
 function showToast() {
-    if (stock <= 3) return; // no more toasts if almost sold out
+    if (stock <= 5) return; // stop at 5 units
     var city = cities[Math.floor(Math.random() * cities.length)];
     var name = firstNames[Math.floor(Math.random() * firstNames.length)] + ' ' + lastNames[Math.floor(Math.random() * lastNames.length)];
-    var q = Math.random() > 0.5 ? 2 : 3;
-    // Reduce stock and increase sold today
-    var actualDrop = Math.min(q, stock - 3);
-    if (actualDrop <= 0) { actualDrop = 1; stock = 3; }
-    else { stock -= actualDrop; }
-    if (stock <= 3) stock = 3;
+    var q = Math.random() > 0.6 ? 2 : 1; // mostly 1 unit, occasionally 2
+    var actualDrop = Math.min(q, stock - 5); // never go below 5
+    if (actualDrop <= 0) return;
+    stock -= actualDrop;
     document.getElementById('stockCounter').textContent = stock;
-    if (stock <= 5) { document.getElementById('urgencyBar').style.background = '#dc2626'; }
+    if (stock <= 8) { document.getElementById('urgencyBar').style.background = '#dc2626'; }
     soldToday += actualDrop;
     document.getElementById('soldToday').textContent = soldToday;
     // Flash stock

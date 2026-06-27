@@ -584,7 +584,7 @@ body {
 <!-- VIDEO DEMO -->
 <section class="section" style="padding-top:0;">
     <div class="container">
-        <video class="hero-video" autoplay loop muted playsinline poster="creativos/antes y despues/1.png" onclick="this.play()">
+        <video class="hero-video" autoplay loop playsinline poster="creativos/antes y despues/1.png" onclick="this.play();this.muted=false" style="max-width:360px;margin:0 auto;display:block;">
             <source src="creativos/demo-loop.mp4" type="video/mp4">
         </video>
         <p style="text-align:center;font-size:13px;color:var(--gray-400);margin-top:8px;">Mujer real. Cabello real. Sin filtro ni edición.</p>

@@ -545,22 +545,12 @@ body {
     <div class="hero-content">
         <div class="hero-badge">El cepillo que Colombia estaba esperando</div>
         <h1>Despierta y <span class="rose italic">ya está lista.</span></h1>
-        <p class="hero-sub">Reduce el frizz y peina tu cabello en minutos desde casa. Sin plancha, sin cremas, sin drama.</p>
+        <p class="hero-sub">Cabello listo en 60 segundos. Sin plancha, sin cremas, sin quemarlo.</p>
     </div>
 
-    <!-- Carrusel grande -->
-    <div style="position:relative;width:100%;max-width:420px;height:340px;margin:0 auto 16px;padding:0 20px;">
-        <div id="heroCarousel" style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.12);">
-            <img id="carouselImg" src="creativos/carrusel-1-ritual.png" style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
-            <button onclick="prevSlide()" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15);">‹</button>
-            <button onclick="nextSlide()" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:none;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15);">›</button>
-        </div>
-        <div style="display:flex;justify-content:center;gap:8px;margin-top:12px;">
-            <span class="carousel-dot active" onclick="goToSlide(0)" style="width:10px;height:10px;border-radius:50%;background:var(--rose-dark);cursor:pointer;"></span>
-            <span class="carousel-dot" onclick="goToSlide(1)" style="width:10px;height:10px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
-            <span class="carousel-dot" onclick="goToSlide(2)" style="width:10px;height:10px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
-            <span class="carousel-dot" onclick="goToSlide(3)" style="width:10px;height:10px;border-radius:50%;background:var(--gray-200);cursor:pointer;"></span>
-        </div>
+    <!-- Hero Image — una sola, alto impacto -->
+    <div style="width:100%;max-width:420px;height:340px;margin:0 auto 16px;padding:0 20px;">
+        <img src="creativos/carrusel-1-ritual.png" alt="Simply Straight ritual de belleza" style="width:100%;height:100%;object-fit:cover;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.12);">
     </div>
 
     <!-- Stats only -->
@@ -625,7 +615,7 @@ body {
 <section class="section">
     <div class="container">
         <div class="section-eyebrow">La solución</div>
-        <h2 class="section-title">Peina y alisa al mismo tiempo</h2>
+        <h2 class="section-title">El cepillo que hace todo</h2>
         <p class="section-sub">Simplemente el cepillo que necesitas. Cerámica 3D con temperatura controlada.</p>
         <div class="features-grid">
             <div class="feature-card"><span class="feature-icon">⚡</span><h4>En minutos</h4><p>Baja el frizz y peina el cabello rápidamente</p></div>
@@ -656,7 +646,7 @@ body {
     <div class="container">
         <div class="honest-section">
             <div class="section-eyebrow" style="text-align:left;">Sé realista</div>
-            <h2 class="section-title" style="font-size:22px;margin-bottom:6px;">Antes de comprar, mira esto</h2>
+            <h2 class="section-title" style="font-size:22px;margin-bottom:6px;">Para qué sirve y para qué no</h2>
             <p style="font-size:13px;color:var(--gray-600);margin-bottom:10px;">Queremos que sepas EXACTAMENTE qué esperar. Nada de promesas falsas.</p>
             <table class="honest-table">
                 <tr><td>Cabello ondulado</td><td>✅ Resultado alto. Baja el frizz y define.</td></tr>
@@ -675,7 +665,7 @@ body {
 <section class="section section-bg">
     <div class="container">
         <div class="section-eyebrow">Comparativa</div>
-        <h2 class="section-title">Simply Straight vs el resto</h2>
+        <h2 class="section-title">Por qué 500 mujeres dejaron la plancha</h2>
         <table class="comp-table">
             <tr><th></th><th>Simply Straight</th><th>Plancha</th><th>Peluquería</th></tr>
             <tr><td>Tiempo</td><td class="win">Minutos</td><td>30-40 min</td><td>1-2 horas</td></tr>
@@ -691,7 +681,7 @@ body {
 <section class="section">
     <div class="container">
         <div class="section-eyebrow">Resultados reales</div>
-        <h2 class="section-title">Mujeres reales. Cabello real.</h2>
+        <h2 class="section-title">Resultados reales. Sin filtro.</h2>
         <div class="testimonials-scroll">
             <div class="testimonial-card">
                 <div class="testimonial-stars">★★★★★</div>
@@ -730,7 +720,7 @@ body {
     <div class="container">
         <div class="checkout-card">
             <div class="section-eyebrow">Oferta de lanzamiento</div>
-            <h2 class="section-title">Simplemente pídelo</h2>
+            <h2 class="section-title">Tu Simply Straight te espera</h2>
             <p style="text-align:center;color:var(--gray-500);font-size:14px;margin-bottom:10px;">Cepillo alisador de cerámica 3D</p>
 
             <div class="price-hero" style="text-align:center;">
@@ -834,31 +824,6 @@ console.log('Simply Straight JS loaded');
 let currentQty = 1;
 let currentPrice = 119900;
 let stock = 19;
-let currentSlide = 0;
-
-// Carousel — simple: changes image src
-var slides = [
-    'creativos/carrusel-1-ritual.png',
-    'creativos/carrusel-2-jardin.png',
-    'creativos/carrusel-3-minimalista.png',
-    'creativos/carrusel-4-producto.png'
-];
-window.goToSlide = function(n) {
-    currentSlide = n;
-    document.getElementById('carouselImg').src = slides[n];
-    document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
-        d.style.background = i === n ? 'var(--rose-dark)' : 'var(--gray-200)';
-    });
-};
-window.prevSlide = function() {
-    currentSlide = (currentSlide - 1 + 4) % 4;
-    window.goToSlide(currentSlide);
-};
-window.nextSlide = function() {
-    currentSlide = (currentSlide + 1) % 4;
-    window.goToSlide(currentSlide);
-};
-window.carouselInterval = setInterval(window.nextSlide, 3000);
 
 function selectPayment(el) {
     document.querySelectorAll('.payment-tab').forEach(t => t.classList.remove('active'));

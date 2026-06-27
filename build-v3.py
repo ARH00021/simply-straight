@@ -634,6 +634,7 @@ body {
     <div class="container">
         <div class="section-eyebrow">Así de simple</div>
         <h2 class="section-title">Tu rutina en 3 pasos</h2>
+        <img src="creativos/lifestyle-3pasos.png" alt="Simply Straight lifestyle" style="width:100%;max-width:380px;margin:16px auto 24px;display:block;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08);">
         <div class="steps-list">
             <div class="step-item"><div class="step-circle">1</div><div class="step-text"><h3>Conéctalo</h3><p>Enchúfalo, enciéndelo y selecciona la temperatura deseada en la pantalla digital. Espera unos segundos a que caliente.</p></div></div>
             <div class="step-item"><div class="step-circle">2</div><div class="step-text"><h3>Pásalo</h3><p>Separa el cabello por mechones. Pásalo de raíz a puntas como si fuera un cepillo normal. Sin apretar.</p></div></div>

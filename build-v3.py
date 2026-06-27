@@ -861,7 +861,7 @@ function nextSlide() {
 setInterval(function() {
     currentSlide = (currentSlide + 1) % 4;
     goToSlide(currentSlide);
-}, 4000);
+}, 3000);
 
 function selectPayment(el) {
     document.querySelectorAll('.payment-tab').forEach(t => t.classList.remove('active'));

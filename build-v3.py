@@ -550,13 +550,13 @@ body {
         <!-- PRECIO EN HERO -->
         <div style="text-align:center;margin:16px 0;">
             <span style="font-size:13px;color:var(--gray-400);text-decoration:line-through;margin-right:8px;">$189.900</span>
-            <span style="font-size:28px;font-weight:800;color:var(--charcoal);">$119.900</span>
+            <span style="font-size:28px;font-weight:800;color:var(--charcoal);">$99.900</span>
             <span style="display:block;font-size:12px;color:var(--rose-dark);font-weight:600;margin-top:2px;">🔥 PRECIO DE LANZAMIENTO · ENVÍO GRATIS</span>
         </div>
         <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:4px;">
-            <span style="background:var(--gray-100);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;">1 × $119.900</span>
-            <span style="background:var(--rose-light);color:var(--rose-dark);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">2 × $99.900 c/u</span>
-            <span style="background:var(--gold);color:#7c6800;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">3 × $89.900 c/u</span>
+            <span style="background:var(--gray-100);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;">1 × $99.900</span>
+            <span style="background:var(--rose-light);color:var(--rose-dark);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">2 × $89.900 c/u</span>
+            <span style="background:var(--gold);color:#7c6800;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">3 × $79.900 c/u</span>
         </div>
         <!-- FIN PRECIO HERO -->
     </div>
@@ -751,16 +751,16 @@ body {
                     <div class="payment-tabs" id="qtyTabs" style="margin-bottom:16px;">
                         <div class="payment-tab active" onclick="selectQty(this,1,99900)" style="flex-direction:column;">
                             <span style="font-weight:800;font-size:15px;">1 unidad</span>
-                            <span style="font-size:11px;">$119.900</span>
+                            <span style="font-size:11px;">$99.900</span>
                         </div>
-                        <div class="payment-tab" onclick="selectQty(this,2,99900)" style="flex-direction:column;border-color:var(--rose-light);">
+                        <div class="payment-tab" onclick="selectQty(this,2,89900)" style="flex-direction:column;border-color:var(--rose-light);">
                             <span style="font-weight:800;font-size:15px;">2 unidades</span>
-                            <span style="font-size:11px;">$99.900 c/u</span>
+                            <span style="font-size:11px;">$89.900 c/u</span>
                             <span style="font-size:9px;color:var(--green);">AHORRAS $40.000</span>
                         </div>
-                        <div class="payment-tab" onclick="selectQty(this,3,89900)" style="flex-direction:column;border-color:var(--gold);">
+                        <div class="payment-tab" onclick="selectQty(this,3,79900)" style="flex-direction:column;border-color:var(--gold);">
                             <span style="font-weight:800;font-size:15px;">3 unidades</span>
-                            <span style="font-size:11px;">$89.900 c/u</span>
+                            <span style="font-size:11px;">$79.900 c/u</span>
                             <span style="font-size:9px;color:var(--green);">AHORRAS $90.000</span>
                             <span style="font-size:8px;background:var(--gold-light);color:var(--gold);padding:1px 6px;border-radius:8px;margin-top:2px;">MÁS VENDIDO</span>
                         </div>
@@ -786,7 +786,7 @@ body {
                 </div>
                 <input class="field" type="text" placeholder="Dirección y complementos (ej: Cra 5 #10-20, Apto 301)" required>
                 <input class="field" type="text" placeholder="Barrio (opcional)">
-                <button type="submit" class="submit-btn">✅ CONFIRMAR PEDIDO — $119.900</button>
+                <button type="submit" class="submit-btn">✅ CONFIRMAR PEDIDO — $99.900</button>
                 <p class="submit-note">Te escribimos por WhatsApp para confirmar todo antes de enviar.</p>
             </form>
 

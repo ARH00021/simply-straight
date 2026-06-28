@@ -749,7 +749,7 @@ body {
             <div style="margin:20px 0;">
                     <p style="font-weight:700;margin-bottom:8px;">Cantidad:</p>
                     <div class="payment-tabs" id="qtyTabs" style="margin-bottom:16px;">
-                        <div class="payment-tab active" onclick="selectQty(this,1,119900)" style="flex-direction:column;">
+                        <div class="payment-tab active" onclick="selectQty(this,1,99900)" style="flex-direction:column;">
                             <span style="font-weight:800;font-size:15px;">1 unidad</span>
                             <span style="font-size:11px;">$119.900</span>
                         </div>
@@ -835,7 +835,7 @@ body {
 <script>
 console.log('Simply Straight JS loaded');
 let currentQty = 1;
-let currentPrice = 119900;
+let currentPrice = 99900;
 let stock = 67;
 
 function selectPayment(el) {

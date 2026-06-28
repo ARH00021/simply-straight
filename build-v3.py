@@ -613,8 +613,8 @@ body {
     <div class="container" style="text-align:center;">
         <div class="price-hero">
             <span class="old">$187.500</span>
-            <span class="now">$117.500</span>
-            <span class="save">AHORRAS $70.000</span>
+            <span class="now">$97.500</span>
+            <span class="save">AHORRAS $90.000</span>
         </div>
         <div style="display:flex;justify-content:center;gap:16px;margin:14px 0 18px;font-size:12px;color:var(--gray-500);">
             <span>👁️ <strong id="viewerCount" style="color:var(--rose-dark);">12</strong> personas viendo</span>
@@ -684,7 +684,7 @@ body {
         <table class="comp-table">
             <tr><th></th><th>Simply Straight</th><th>Plancha</th><th>Peluquería</th></tr>
             <tr><td>Tiempo</td><td class="win">Minutos</td><td>30-40 min</td><td>1-2 horas</td></tr>
-            <tr><td>Costo</td><td class="win">$117.500 una vez</td><td>$80-150K + cremas</td><td>$30-80K por visita</td></tr>
+            <tr><td>Costo</td><td class="win">$97.500 una vez</td><td>$80-150K + cremas</td><td>$30-80K por visita</td></tr>
             <tr><td>Daño</td><td class="win">Temp. controlada</td><td>Calor directo</td><td>Químicos</td></tr>
             <tr><td>Dónde</td><td class="win">En tu casa</td><td>En tu casa</td><td>Fuera de casa</td></tr>
             <tr><td>Garantía</td><td class="win">✅ Sí</td><td>Depende</td><td>No aplica</td></tr>
@@ -740,8 +740,8 @@ body {
 
             <div class="price-hero" style="text-align:center;">
                 <span class="old">$187.500</span>
-                <span class="now">$117.500</span><br>
-                <span class="save" style="margin-left:0;margin-top:6px;">AHORRAS $70.000 HOY</span>
+                <span class="now">$97.500</span><br>
+                <span class="save" style="margin-left:0;margin-top:6px;">AHORRAS $90.000 HOY</span>
             </div>
 
             <p style="text-align:center;color:var(--green);font-weight:600;font-size:13px;margin-bottom:4px;">🚚 Envío GRATIS a toda Colombia</p>

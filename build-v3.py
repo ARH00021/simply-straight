@@ -568,7 +568,7 @@ body {
 
     <!-- Stats only -->
     <div class="stats-row">
-        <div class="stat-item"><div class="stat-num">+500</div><div class="stat-label">Vendidos</div></div>
+        <div class="stat-item"><div class="stat-num">+700</div><div class="stat-label">Vendidos</div></div>
         <div class="stat-item"><div class="stat-num">4.8 ★</div><div class="stat-label">Estrellas</div></div>
         <div class="stat-item"><div class="stat-num">60s</div><div class="stat-label">Resultado</div></div>
     </div>
@@ -603,7 +603,7 @@ body {
         <div style="text-align:center;margin-top:6px;"><button onclick="var v=document.querySelector('video');v.muted=!v.muted;this.textContent=v.muted?'🔇':'🔊'" style="background:rgba(0,0,0,.7);color:white;border:none;padding:6px 12px;border-radius:20px;font-size:12px;cursor:pointer;">🔇 Toca para activar sonido</button></div>
         <p style="text-align:center;font-size:13px;color:var(--gray-400);margin-top:8px;">Mujer real. Cabello real. Sin filtro ni edición.</p>
         <div style="text-align:center;margin-top:16px;">
-            <span style="display:inline-block;background:var(--rose-dark);color:white;padding:6px 20px;border-radius:16px;font-size:14px;font-weight:700;">+500 vendidos ✨</span>
+            <span style="display:inline-block;background:var(--rose-dark);color:white;padding:6px 20px;border-radius:16px;font-size:14px;font-weight:700;">+700 vendidos ✨</span>
         </div>
     </div>
 </section>
@@ -680,7 +680,7 @@ body {
 <section class="section section-bg">
     <div class="container">
         <div class="section-eyebrow">Comparativa</div>
-        <h2 class="section-title">Por qué 500 mujeres dejaron la plancha</h2>
+        <h2 class="section-title">Por qué 700 mujeres dejaron la plancha</h2>
         <table class="comp-table">
             <tr><th></th><th>Simply Straight</th><th>Plancha</th><th>Peluquería</th></tr>
             <tr><td>Tiempo</td><td class="win">Minutos</td><td>30-40 min</td><td>1-2 horas</td></tr>
